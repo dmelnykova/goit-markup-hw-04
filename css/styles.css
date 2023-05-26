@@ -337,14 +337,15 @@ img {
 
 
 .team-soc-list {
-    display: flex;
     gap: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .team-soc-item {
     width: 40px;
     height: 40px;
-    
+    display: inline-block;
 }
 
 .team-soc-link {
@@ -352,8 +353,8 @@ img {
     height: 100%;
     background-color: var(--primary-brand-color);
     border-radius: 50%;
-    display: flex;
-    
+    display: inline-block;
+   
 
 }
 
