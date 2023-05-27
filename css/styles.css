@@ -201,6 +201,8 @@ img {
 
 }
 .hero {
+    max-width: 1140px;
+    margin: 0 auto;
     background-color:var(--title-background-color-dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -333,19 +335,20 @@ img {
 
 .team-item-subtitle {}
 
-.team-item-text 
+.team-item-text {
+    margin-bottom: 8px;
+}
 
 
 .team-soc-list {
-    gap: 24px;
     display: flex;
     justify-content: center;
+    gap: 24px;
 }
 
 .team-soc-item {
     width: 40px;
     height: 40px;
-    display: inline-block;
 }
 
 .team-soc-link {
@@ -353,11 +356,15 @@ img {
     height: 100%;
     background-color: var(--primary-brand-color);
     border-radius: 50%;
-    display: inline-block;
-   
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--pressed-state-color);
+}
 
 /**--customers--**/
 
